@@ -24,7 +24,11 @@ class Carro:
         txt = "Modelo: " + self.modelo
         txt += "\nAno: " + str( self.ano )
         txt += "\nKilometragem: " + str( self.__kilometragem )
-        return txt
+        return txt 
+
+    def imprimir(self):
+        print( self )
+
 
 x = Carro("Doblo", 2025)
 print( x )
