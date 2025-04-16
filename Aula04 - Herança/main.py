@@ -18,4 +18,6 @@ telaCat = TelaCategoria("Adicionar Categorias", categorias )
 telaCarro = TelaCarro( "Cadastro de Carro", categorias, telaCat)
 telaCarro.show()
 
+#telaCat.telaCarro = telaCarro
+
 sys.exit( app.exec_() )
