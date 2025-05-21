@@ -1,0 +1,9 @@
+
+Atividade: Utilize o projeto da 
+concessionária que construimos nas 
+aulas de Herança, polimorfismo e encapsulamento. 
+Neste projeto, aplique os conceitos de classes 
+abstratas, tornando abtratas, as classes que não 
+gerarão instâncias.
+Construa também um método abstrato em cada 
+classe abstrata.
