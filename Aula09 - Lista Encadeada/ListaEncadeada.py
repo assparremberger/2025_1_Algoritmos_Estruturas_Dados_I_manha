@@ -36,4 +36,47 @@ class ListaEncadeada:
             while aux :
                 print( aux.dado )
                 aux = aux.prox
-        
+    
+    def removerDoInicio(self):
+        if self.inicio is not None:
+            self.inicio = self.inicio.prox
+            print( "Elemento Removido" )
+        self.imprimir()
+
+    def removerDoFim(self):
+        if self.inicio is not None:
+            if self.inicio.prox == None:
+                self.inicio = None
+            else:
+                ant = self.inicio
+                aux = self.inicio.prox
+                while aux.prox:
+                    ant = aux
+                    aux = aux.prox
+                ant.prox = None
+            print( "Elemento Removido" )
+        self.imprimir()
+
+    def remover(self, valor):
+        print("Teste")
+        if self.inicio != None:
+            removeu = False
+            if self.inicio.dado == valor:
+                self.inicio = self.inicio.prox
+                removeu = True
+            else:
+                ant = self.inicio
+                aux = self.inicio.prox
+                while aux != None: 
+                    if valor == aux.dado:
+                        ant.prox = aux.prox
+                        removeu = True
+                        break
+                    else:
+                        ant = aux
+                        aux = aux.prox
+                if removeu:
+                    print( "Elemento ", valor, " removido")
+                else:
+                    print( "Elemento não encontrado")
+        self.imprimir()
